@@ -66,7 +66,6 @@ public class LamdaExceptionsTest {
 	 */
 	@Test
 	public void noException() {
-		map(Arrays.asList("1","12","123"), String::length);
 		map(list, String::length);
 	}
 	
