@@ -15,6 +15,6 @@
  */
 package org.jnity.throwablelambdas;
 
-public interface ThrowableFunction<A, B, T extends Throwable> {
+public interface FallingFunction<A, B, T extends Throwable> {
 	B apply(A a) throws T;
 }

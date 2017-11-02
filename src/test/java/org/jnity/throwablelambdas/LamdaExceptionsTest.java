@@ -96,7 +96,7 @@ public class LamdaExceptionsTest {
 	 */
 	@Test
 	public void separatedException() throws InterruptedException, IOException {
-		thrown.expect(anyOf(instanceOf(InterruptedException.class),instanceOf(IOException.class)));
+		thrown.expect(anyOf(instanceOf(InterruptedException.class), instanceOf(IOException.class)));
 		System.out.println(Mapper.map(
 				Mapper.map(list, LamdaExceptionsTest::connect),
 				LamdaExceptionsTest::sleep));

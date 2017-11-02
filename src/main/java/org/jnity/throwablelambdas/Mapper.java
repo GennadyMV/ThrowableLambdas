@@ -19,12 +19,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Mapper {
-	public static <A, B, T extends Throwable> Collection<B> map(Collection<A> sourse,
-			ThrowableFunction<A, B, T> function) throws T {
+	public static <A, B, T extends Throwable> Collection<B> map(Collection<A> source,
+			FallingFunction<A, B, T> function) throws T {
 		Collection<B> result = new ArrayList<>();
-		for (A a : sourse) {
+		for (A a : source) {
 			result.add(function.apply(a));
 		}
 		return result; 
 	}
+
 }
