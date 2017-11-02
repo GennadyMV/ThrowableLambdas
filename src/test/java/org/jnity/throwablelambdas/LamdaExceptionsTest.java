@@ -58,7 +58,7 @@ public class LamdaExceptionsTest {
 
 	@Before
 	public void prepare() {
-		list = Arrays.asList("http://rambler.ru/", "http://yander.ru/", "http://google.com/", "http://гугл.сом/");
+		list = Arrays.asList("http://rambler.ru/", "http://yander.ru/", "http://google.com/", "http://google.som/");
 	}
 	/**
 	 * Calling lambda that will not throw Exception, will be change generic type 
